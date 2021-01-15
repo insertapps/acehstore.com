@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Toko Online Aceh</title>
-    <link>http://www.acehstore.com/tags/</link>
+    <link>http://acehstore.com/tags/</link>
     <description>Recent content in Tags on Toko Online Aceh</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://www.acehstore.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="http://acehstore.com/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
