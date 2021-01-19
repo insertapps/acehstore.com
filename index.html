@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Toko Online Aceh - </title>
+    <title>Acehstore - Toko Online Aceh</title>
 	
 	<link rel="stylesheet" href="http://acehstore.com/assets/css/style.css">
 	<link rel="stylesheet" href="http://acehstore.com/assets/css/basscss.css">
@@ -12,8 +12,8 @@
 	
 	
 	
-</head><body><header class="top-0 right-0 left-0 fixed z4 px2 py1 bg-white box-shadow flex items-center">
-	<div class="burger flex flex-column justify-between pr2 md-hide lg-hide">
+</head><body><header class="top-0 right-0 left-0 fixed z2 px2 py1 bg-white box-shadow flex items-center">
+	<div id="burger" class="burger flex flex-column justify-between pr2 lg-hide" onclick="removeHide();">
 		<span class="bg-blue-bayoux"></span>
 		<span class="bg-blue-bayoux"></span>
 		<span class="bg-blue-bayoux"></span>
@@ -21,15 +21,18 @@
 	<div class="brand">
 	<a class="blue-bayoux text-decoration-none" href="#"><h1 class="h2 m0 bold">acehstore</h1></a>
 	</div>
-	        <nav class="ml-auto">
-            <ul class="list-reset m0">
-                <li class="inline-block mr2"><a href="#" class="blue-bayoux text-decoration-none">Brand</a></li>
-                <li class="inline-block mr2"><a href="#" class="blue-bayoux text-decoration-none">Product</a></li>
-                <li class="inline-block mr2"><a href="#" class="blue-bayoux text-decoration-none">Job</a></li>
-                <li class="inline-block"><a href="#" class="blue-bayoux text-decoration-none">Service</a></li>
-            </ul>
-        </nav>
-</header><div class="bg-lime center item-center p4">
+	<nav class="ml-auto">
+		<ul class="list-reset m0">
+			<li class="inline-block mr2"><a href="#" class="blue-bayoux text-decoration-none">Brand</a></li>
+			<li class="inline-block mr2"><a href="#" class="blue-bayoux text-decoration-none">Product</a></li>
+			<li class="inline-block mr2"><a href="#" class="blue-bayoux text-decoration-none">Job</a></li>
+			<li class="inline-block"><a href="#" class="blue-bayoux text-decoration-none">Service</a></li>
+		</ul>
+    </nav>
+</header>
+<div id="menu-sidenav" class="class1 sidebar-menu top-0 bottom-0 z4 fixed bg-white col-3 p3">
+	Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non, officiis mollitia enim maiores fugiat temporibus voluptatum adipisci ipsum doloremque aspernatur possimus autem eaque rem ab quasi sapiente itaque distinctio blanditiis!
+</div><div class="bg-lime center item-center p4">
 <h1>Hero</h1>
 </div><div id="content" class="clearfix">
 <div class="max-width-4 mx-auto p2 center">
@@ -37,11 +40,43 @@
 	<div class="mb2 p4 border rounded border-olive">
 		Listing Brand
 	</div>
-	<div class="mb2 p4 border rounded border-blue">
-		Product Display
+
+	<div class="mb3">
+	  <div id="mousewheel" class="overflow-x-scroll scrollbar-hide">
+		<div class="flex justify-between">
+			<div class="border rounded border-silver mr2 block" style="min-width: 200px">
+				<img class="block" src="https://freebiespic.com/images/2019/0506_computer-mouse-1060.jpg">
+				<p class="p1 h6 left-align m0">Lorem ipsum dolor sit amet consectetur</p>
+			</div>
+			<div class="border rounded border-silver mr2 block" style="min-width: 200px">
+				<img class="block" src="https://freebiespic.com/images/2019/0506_wireless-keyboard-image_1129.jpg">
+				<p class="p1 h6 left-align m0">Lorem ipsum dolor sit amet consectetur</p>
+			</div>
+			<div class="border rounded border-silver mr2 block" style="min-width: 200px">
+				<img class="block" src="https://freebiespic.com/images/2019/0506_cordless-mouse-1066.jpg">
+				<p class="p1 h6 left-align m0">Lorem ipsum dolor sit amet consectetur</p>
+			</div>
+			<div class="border rounded border-silver mr2 block" style="min-width: 200px">
+				<img class="block" src="https://freebiespic.com/images/2019/0506_wireless-keyboard_1087.jpg">
+				<p class="p1 h6 left-align m0">Lorem ipsum dolor sit amet consectetur</p>
+			</div>
+			<div class="border rounded border-silver mr2 block" style="min-width: 200px">
+				<img class="block" src="https://freebiespic.com/images/2019/0506_cordless-mouse-battery_1074.jpg">
+				<p class="p1 h6 left-align m0">Lorem ipsum dolor sit amet consectetur</p>
+			</div>
+			<div class="border rounded border-silver mr2 block" style="min-width: 200px">
+				<img class="block" src="https://freebiespic.com/images/2019/0506_wireless-keyboard-and-mouse-combo_1092.jpg">
+				<p class="p1 h6 left-align m0">Lorem ipsum dolor sit amet consectetur</p>
+			</div>
+			<div class="border rounded border-silver mr2 block" style="min-width: 200px">
+				<img class="block" src="https://freebiespic.com/images/2019/0506_wireless-mouse-battery-replacement_1072.jpg">
+				<p class="p1 h6 left-align m0">Lorem ipsum dolor sit amet consectetur</p>
+			</div>
+		</div>
+	  </div>
 	</div>
 
-	<div class="mb2 p4 border rounded border-lime">
+	<div class="mb2 p4 border rounded border-lime bg-white">
 		Finding Jobs
 	</div>
 
@@ -64,6 +99,37 @@
 	</nav>
 <div class="h6 silver bg-blue-bayoux px2 py1">
 © 2021 Acehstore.com All rights reserved.
+<div id="overlay" class="class2 masking z3" onclick="reactiveHide()">
 </div>
-</footer></body>
+</div>
+</footer><script>
+function removeHide() {
+  document.querySelectorAll('#menu-sidenav, #overlay').forEach(el => el.classList.add('active'));
+}
+
+function reactiveHide(){
+document.querySelectorAll('.class1, .class2').forEach(el => el.classList.remove('active'));
+}
+
+
+
+
+const xyz = document.getElementById('mousewheel');
+
+xyz.addEventListener('wheel', function(e) {
+    const step = 10; 
+
+    if (e.deltaY > 0) 
+        xyz.scrollLeft += step;
+    else 
+        xyz.scrollLeft -= step;
+		e.preventDefault();
+});
+
+
+
+
+
+
+</script></body>
 </html>
